@@ -19,7 +19,7 @@ const StudentDetails = () => {
 
                     <div className='flex flex-col mb-3'>
                         <label className='mb-2' htmlFor="gurdianname">Your Gurdian Name</label>
-                        <input type="number" name='gurdianname' className="w-[400px] input input-bordered  max-w-xs" {...register("gurdianname", { required: true })} />
+                        <input type="text" name='gurdianname' className="w-[400px] input input-bordered  max-w-xs" {...register("gurdianname", { required: true })} />
                         {errors.gurdianname?.type === 'required' && <span className='text-red-500'>Gurdian Name is required</span>}
                     </div>
                 </div>
