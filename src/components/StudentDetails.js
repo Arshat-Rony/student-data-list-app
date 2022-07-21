@@ -26,7 +26,7 @@ const StudentDetails = () => {
                 <div className='flex md:flex-row md:gap-5 flex-col'>
                     <div className='flex flex-col mb-3'>
                         <label className='mb-2' htmlFor="email">Your Email</label>
-                        <input type="number" name='email' className="w-[400px] input input-bordered  max-w-xs" {...register("email", { required: true })} />
+                        <input type="email" name='email' className="w-[400px] input input-bordered  max-w-xs" {...register("email", { required: true })} />
                         {errors.email?.type === 'required' && <span className='text-red-500'>Email is required</span>}
                     </div>
                     <div className='flex flex-col mb-3'>
