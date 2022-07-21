@@ -7,7 +7,7 @@ const StudentDetails = () => {
 
     const onSubmit = (data) => console.log(data);
     return (
-        <div className='w-8/12 mx-auto flex items-center justify-center min-h-screen my-5'>
+        <div className='w-8/12 mx-auto flex flex-col items-center justify-center min-h-screen my-5'>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <h3 className='text-2xl font-bold text-center mb-12'>Place Your Details Here</h3>
                 <div className='flex md:flex-row md:gap-5 flex-col'>
@@ -63,13 +63,13 @@ const StudentDetails = () => {
 
                 </div>
 
-                <div className='flex justify-between items-center gap-5'>
-                    <input type="submit" className='btn btn-accent w-auto md:w-[150px]' value="Add Students" />
-                    <button className="btn btn-sedondary w-auto md:w-[150px]">Edit Data</button>
-                    <button style={{ backgroundColor: "red" }} className="btn btn-primary w-auto md:w-[150px]">Delete</button>
-                </div>
+                <input type="submit" className='btn btn-accent w-auto md:w-[150px]' value="Add Students" />
 
             </form>
+            <div className='flex justify-between items-center w-full md:w-8/12 mx-auto mt-5'>
+                <button className="btn btn-sedondary w-auto md:w-[150px] ">Edit Data</button>
+                <button style={{ backgroundColor: "red" }} className="btn btn-primary w-auto md:w-[150px]">Delete</button>
+            </div>
         </div>
     );
 };
